@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap');
+/*
+font-family: 'Rubik', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+.main {
+    background: linear-gradient(to bottom, #212121,transparent), url(img/background.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    background-attachment: fixed;
+    color: #fff;
+}
+.container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background: linear-gradient(to bottom, black, transparent);
+    position: fixed;;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+.menu {
+    margin-right: 15px;
+}
+
+.brand {
+    min-width: 210px;
+    min-height: 60px;
+}
+
+.brand a {
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    color: #d84530;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1rem;
+
+}
+
+.brand::after {
+    font-family: 'Rubik', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.4rem;
+    content: "Web Developer";
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    transition: font-size 0.5s;
+}
+
+.brand:hover::after{
+    font-size: 13px;
+}
+
+
+nav ul {
+    display: flex;
+}
+nav ul li a {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    transition: color 0.5s;
+}
+
+nav ul li a:hover {
+    color: #d84530;
+}
+
+.chamada {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-curriculo {
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: #d84530;
+    margin: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    border: #ce9289  1px solid;
+    
+}
+.fa-file-word {
+    padding: 0 5px;
+}
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+                 "nome  nome"        
+                 "texto imagem"
+                 "skills skills";
+    column-gap: 5px;
+    margin: 0 5px;
+
+}
+
+.nome {
+    grid-area: nome;
+    justify-self: center;
+}
+
+.texto {
+    grid-area: texto;
+    font-size: 1.5em;
+}
+
+.imagem {
+    grid-area: imagem;
+    font-size: 1.5em;
+}
+
+.about {
+    padding:5% 0;
+    min-height: 400px;
+    align-items: center;
+}
+
+.portifolio {
+    color:white;
+    background-color: black;
+    min-height: 400px;
+}
+
+.sobre h1 {
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 700;
+    font-size: 2rem;
+    padding-bottom: 20%;
+    position: relative;
+
+}
+
+.sobre h1::after {
+    content: "";
+    background-color: black;
+    height: 3px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 30%;
+}
+
+.skills {
+    grid-area: skills;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.skills img {
+    justify-self: center;
+    max-width: 60px;
+    max-height: 60px;
+}
+
+.skills h2 {
+    grid-column: 1/4;
+    justify-self: center;
+    margin: 15px;
+}
