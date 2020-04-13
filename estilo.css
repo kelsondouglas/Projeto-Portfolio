@@ -252,6 +252,14 @@ nav ul li a:hover {
 
 .informacoes  {
     flex: 1;
-    display: flex;
+}
 
+.flex h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.informacoes p {
+    margin: 5px 0;
 }
