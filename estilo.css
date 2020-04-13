@@ -157,13 +157,7 @@ nav ul li a:hover {
     background-color: #f3e3c8;
 }
 
-.portifolio {
-    color:white;
-    background-color: black;
-    min-height: 400px;
-}
-
-.sobre h1 {
+.titulo {
     font-family: 'Roboto Mono', monospace;
     font-weight: 700;
     font-size: 2rem;
@@ -172,7 +166,7 @@ nav ul li a:hover {
 
 }
 
-.sobre h1::after {
+.titulo::after {
     content: "";
     background-color: black;
     height: 3px;
@@ -199,4 +193,65 @@ nav ul li a:hover {
     grid-column: 1/4;
     justify-self: center;
     margin: 15px;
+}
+
+.contato {
+    color:white;
+    background-color: black;
+    min-height: 400px;
+}
+
+.formulario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form  {
+    display: flex;
+    flex: 1;
+}
+
+.formulario input, .formulario textarea {
+    padding: 10px 5px;
+    margin: 10px;
+    background-color: transparent;
+    resize: none;
+    color: white;
+    border: none;
+    border: 2px #fff solid;
+    border-radius: 10px;
+    outline: 0;
+}
+
+.formulario input[type='submit'] {
+    font-weight: 900;
+    cursor: pointer;
+    background-color: tomato;
+    border: none;
+}
+
+.formulario input[type='submit']:hover {
+    font-weight: 900;
+    cursor: pointer;
+    background-color: #d84530;
+    border: none;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-contato {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.informacoes  {
+    flex: 1;
+    display: flex;
+
 }
